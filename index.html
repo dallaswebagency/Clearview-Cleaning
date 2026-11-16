@@ -5,352 +5,347 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clearview Cleaning | Calgary Window Cleaning Since 1988</title>
 <meta name="description" content="Clearview Cleaning: window cleaning, gutter cleaning, pressure and soft washing, high dusting and greenhouse cleaning for Calgary homes and businesses since 1988.">
-<meta name="theme-color" content="#06202A">
+<meta name="theme-color" content="#0097BF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
   --teal:#0097BF;
-  --teal-d:#007796;
-  --glass:#BDEBF7;
-  --ink:#06202A;
-  --ink-2:#0C2F3C;
-  --paper:#F5F3EE;
-  --line:rgba(6,32,42,.12);
-  --text:#3A4F58;
+  --teal-d:#00799A;
+  --sky:#E5F5FA;
+  --sky-2:#CDEDF6;
+  --ink:#0A1B22;
+  --muted:#5B6B72;
+  --bg:#F6F7F7;
+  --card:#FFFFFF;
+  --line:#E3E8EA;
+  --r:30px;
   --wrap:1320px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Figtree',sans-serif;color:var(--text);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Inter Tight',system-ui,sans-serif;color:var(--muted);background:var(--bg);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-h1,h2,h3,h4,.disp{font-family:'Archivo',sans-serif;font-stretch:118%;color:var(--ink);line-height:.95;letter-spacing:-.025em;font-weight:800}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
-.eyebrow{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:700;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:12px}
-.eyebrow::before{content:"";width:12px;height:12px;border:3px solid currentColor;border-right-color:transparent}
-.btn{display:inline-flex;align-items:center;gap:12px;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;font-size:15px;padding:18px 28px;border-radius:100px;transition:.3s cubic-bezier(.2,.8,.2,1);cursor:pointer;border:0;white-space:nowrap}
-.btn svg{width:18px;height:18px;transition:.3s}
-.btn:hover svg{transform:translateX(4px)}
+h1,h2,h3,h4{font-family:'Inter Tight',system-ui,sans-serif;color:var(--ink);font-weight:600;letter-spacing:-.045em;line-height:.98}
+.sf{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.02em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:7px 14px 7px 10px;border-radius:100px}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--sky)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15.5px;padding:15px 24px;border-radius:100px;transition:.35s cubic-bezier(.2,.8,.2,1);cursor:pointer;border:0;white-space:nowrap;letter-spacing:-.01em;font-family:inherit}
+.btn .ar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.2);transition:.35s;margin-right:-10px}
+.btn .ar svg{width:14px;height:14px}
+.btn:hover .ar{transform:rotate(-45deg)}
 .b-teal{background:var(--teal);color:#fff}
-.b-teal:hover{background:#fff;color:var(--ink)}
-.b-glass{background:rgba(255,255,255,.12);color:#fff;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25)}
+.b-teal:hover{background:var(--teal-d)}
+.b-dark{background:var(--ink);color:#fff}
+.b-dark:hover{background:#1E3540}
+.b-white{background:#fff;color:var(--ink)}
+.b-white .ar{background:var(--sky);color:var(--teal-d)}
+.b-glass{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(12px)}
 .b-glass:hover{background:#fff;color:var(--ink)}
-.b-ink{background:var(--ink);color:#fff}
-.b-ink:hover{background:var(--teal)}
+.sec{padding:130px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.head h2{font-size:clamp(40px,5vw,76px);margin-top:20px;max-width:780px}
+.head h2 .sf{color:var(--teal)}
+.head p{max-width:400px;font-size:17.5px}
 
-/* ===== HEADER ===== */
-header{position:fixed;top:18px;left:0;right:0;z-index:80;transition:.4s}
-header .bar{max-width:var(--wrap);margin:0 auto;padding:0 32px}
-header .in{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-radius:100px;padding:10px 10px 10px 28px;box-shadow:0 10px 40px -10px rgba(6,32,42,.25)}
-.logo img{height:38px;width:auto}
-nav ul{display:flex;list-style:none;gap:4px}
-nav a{font-weight:600;font-size:15px;color:var(--ink);padding:10px 16px;border-radius:100px;transition:.2s}
-nav a:hover{background:#EAF5F9;color:var(--teal-d)}
-.h-r{display:flex;align-items:center;gap:8px}
-.h-call{display:flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;color:var(--ink);font-size:15px}
-.h-call i{width:38px;height:38px;border-radius:50%;background:#EAF5F9;display:grid;place-items:center;color:var(--teal)}
-.h-call svg{width:17px;height:17px}
-.h-r .btn{padding:14px 24px}
-.burger{display:none;width:48px;height:48px;border-radius:50%;background:var(--ink);border:0;cursor:pointer}
+/* header */
+header{position:fixed;top:14px;left:0;right:0;z-index:80}
+header .in{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+header .bar{display:flex;align-items:center;justify-content:space-between;padding:10px 10px 10px 24px;border-radius:100px;background:rgba(255,255,255,.82);backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.7);box-shadow:0 8px 30px -12px rgba(10,27,34,.18)}
+.logo img{height:36px}
+nav ul{display:flex;list-style:none;gap:2px}
+nav a{font-size:15px;font-weight:500;color:var(--ink);padding:9px 15px;border-radius:100px;transition:.2s}
+nav a:hover{background:var(--sky);color:var(--teal-d)}
+.hr{display:flex;gap:8px;align-items:center}
+.hr .tel{font-weight:600;color:var(--ink);font-size:15px;padding:0 14px}
+.hr .btn{padding:12px 20px}
+.burger{display:none;width:46px;height:46px;border-radius:50%;background:var(--ink);border:0;cursor:pointer}
 .burger span{display:block;width:18px;height:2px;background:#fff;margin:4px auto}
 
-/* ===== HERO / FOGGED GLASS ===== */
-.hero{position:relative;height:100vh;min-height:720px;max-height:1000px;background:var(--ink);overflow:hidden;color:#fff}
+/* hero */
+.hero{padding:12px}
+.hero-box{position:relative;height:calc(100vh - 24px);min-height:700px;max-height:960px;border-radius:36px;overflow:hidden;background:#0A1B22;color:#fff}
 .hero-img{position:absolute;inset:0;background:url(images/hero-glass.webp) center 35%/cover}
 #fog{position:absolute;inset:0;width:100%;height:100%;z-index:2;touch-action:pan-y}
-.hero::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg,rgba(6,32,42,.78) 0%,rgba(6,32,42,.35) 45%,transparent 70%),linear-gradient(0deg,rgba(6,32,42,.7),transparent 35%)}
-.mullion{position:absolute;z-index:4;background:var(--ink);pointer-events:none}
-.mullion.v{top:0;bottom:0;left:66%;width:16px}
-.mullion.h{left:66%;right:0;top:48%;height:16px}
-.hero-c{position:relative;z-index:5;height:100%;max-width:var(--wrap);margin:0 auto;padding:150px 32px 60px;display:flex;flex-direction:column;justify-content:flex-end;pointer-events:none}
-.hero-c *{pointer-events:auto}
-.hero .eyebrow{color:var(--glass);margin-bottom:24px}
-.hero h1{color:#fff;font-size:clamp(52px,8.4vw,136px);font-weight:900;max-width:1000px}
-.hero h1 .o{-webkit-text-stroke:2px #fff;color:transparent}
-.hero h1 .t{color:var(--glass)}
-.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:40px;flex-wrap:wrap}
-.hero-row p{max-width:460px;font-size:18px;color:#D3E6EC}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hint{position:absolute;z-index:6;right:40px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:12px;font-family:'Archivo',sans-serif;font-stretch:120%;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#fff;background:rgba(6,32,42,.55);backdrop-filter:blur(8px);padding:12px 18px;border-radius:100px;pointer-events:none;transition:opacity .6s}
-.hint i{width:28px;height:28px;border-radius:50%;border:2px solid var(--glass);position:relative}
-.hint i::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--glass);animation:pulse 1.6s infinite}
-@keyframes pulse{50%{transform:scale(.5);opacity:.4}}
+.hero-box::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(0deg,rgba(10,27,34,.82) 0%,rgba(10,27,34,.25) 45%,rgba(10,27,34,0) 70%),linear-gradient(90deg,rgba(10,27,34,.45),transparent 60%)}
+.hero-c{position:absolute;z-index:5;left:0;right:0;bottom:0;padding:0 56px 56px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;pointer-events:none}
+.hero-c > *{pointer-events:auto}
+.hero .pill{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px);margin-bottom:26px}
+.hero .pill::before{box-shadow:0 0 0 4px rgba(0,151,191,.35)}
+.hero h1{color:#fff;font-size:clamp(54px,7.6vw,124px);font-weight:600;letter-spacing:-.055em;line-height:.92}
+.hero h1 .sf{color:var(--sky-2);font-size:1.08em}
+.hero-r p{font-size:18px;color:#DCEBEF;margin-bottom:26px;max-width:420px}
+.hero-r .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.chip{position:absolute;z-index:6;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);color:var(--ink);border-radius:20px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px -12px rgba(0,0,0,.35);animation:float 6s ease-in-out infinite;pointer-events:none}
+.chip b{font-size:22px;font-weight:600;letter-spacing:-.04em;display:block;line-height:1}
+.chip small{font-size:12.5px;color:var(--muted)}
+.chip i{width:40px;height:40px;border-radius:12px;background:var(--sky);display:grid;place-items:center;color:var(--teal)}
+.chip i svg{width:20px;height:20px}
+.chip.a{top:130px;right:56px}
+.chip.b{top:250px;right:190px;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-10px)}}
+.hint{white-space:nowrap;position:absolute;z-index:6;left:50%;top:120px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:#fff;background:rgba(10,27,34,.45);backdrop-filter:blur(10px);padding:9px 16px 9px 10px;border-radius:100px;pointer-events:none;transition:opacity .6s}
+.hint i{width:22px;height:22px;border-radius:50%;background:#fff;position:relative}
+.hint i::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid #fff;animation:ring 1.6s infinite}
+@keyframes ring{to{transform:scale(1.6);opacity:0}}
 .hint.gone{opacity:0}
 
-/* ===== MARQUEE ===== */
-.marq{background:var(--teal);color:#fff;overflow:hidden;padding:26px 0;border-top:1px solid rgba(255,255,255,.2)}
-.marq .tr{display:flex;gap:56px;width:max-content;animation:mq 38s linear infinite}
-.marq span{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:800;font-size:34px;letter-spacing:-.01em;display:flex;align-items:center;gap:56px;white-space:nowrap}
-.marq span::after{content:"";width:18px;height:18px;border:4px solid #fff;border-right-color:transparent;flex:none}
-.marq span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px #fff}
-@keyframes mq{to{transform:translateX(-50%)}}
+/* trust */
+.trust{padding:34px 0 0}
+.trust .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.trust div{display:flex;align-items:center;gap:10px;font-weight:500;color:var(--ink);font-size:15.5px}
+.trust svg{width:22px;height:22px;color:var(--teal)}
 
-/* ===== INTRO / NUMBERS ===== */
-.intro{padding:140px 0 120px}
-.intro-g{display:grid;grid-template-columns:1.3fr 1fr;gap:80px;align-items:end}
-.intro h2{font-size:clamp(40px,4.6vw,72px);margin-top:22px}
-.intro h2 em{font-style:normal;color:var(--teal)}
-.intro p{font-size:19px}
-.nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:90px;border-top:1px solid var(--line)}
-.num{padding:34px 28px 0 0;border-right:1px solid var(--line);margin-right:28px}
-.num:last-child{border:0;margin:0}
-.num b{display:block;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:clamp(48px,5vw,80px);color:var(--ink);line-height:1;letter-spacing:-.04em}
-.num b sup{font-size:.45em;color:var(--teal);vertical-align:top;position:relative;top:.2em}
-.num > span{display:block;margin-top:12px;font-weight:600;color:var(--ink);font-size:15.5px}
+/* about */
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ab-txt{background:var(--card);border-radius:var(--r);padding:56px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line)}
+.ab-txt h2{font-size:clamp(36px,3.8vw,58px);margin:22px 0 22px}
+.ab-txt h2 .sf{color:var(--teal)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1px solid var(--line)}
+.stats > div{padding-top:24px}
+.stats b{display:block;font-size:clamp(40px,4vw,60px);font-weight:600;letter-spacing:-.05em;color:var(--ink);line-height:1}
+.stats b .sf{color:var(--teal)}
+.stats > div > span{font-size:14.5px}
+.ab-img{border-radius:var(--r);overflow:hidden;position:relative;min-height:600px}
+.ab-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ab-img .tagc{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-radius:22px;padding:18px 18px 18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.ab-img .tagc b{color:var(--ink);font-weight:600;font-size:17px;letter-spacing:-.02em}
+.ab-img .tagc span{font-size:14px}
 
-/* ===== SERVICES STACK ===== */
-.svc{padding:40px 0 140px}
-.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
-.svc-head h2{font-size:clamp(40px,5vw,80px);margin-top:20px}
-.svc-head p{max-width:400px}
-.stack{position:relative}
-.card{position:sticky;top:110px;display:grid;grid-template-columns:1.05fr 1fr;min-height:520px;border-radius:28px;overflow:hidden;margin-bottom:40px;box-shadow:0 -20px 60px -30px rgba(6,32,42,.35)}
-.card:nth-child(2){top:130px}.card:nth-child(3){top:150px}.card:nth-child(4){top:170px}.card:nth-child(5){top:190px}
-.card .pic{position:relative;overflow:hidden}
-.card .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
-.card:hover .pic img{transform:scale(1.05)}
-.card .body{padding:56px;display:flex;flex-direction:column;position:relative}
-.card .idx{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:120px;line-height:.8;letter-spacing:-.05em;position:absolute;right:40px;top:40px;opacity:.1}
-.card .who{display:flex;gap:8px;margin-bottom:auto}
-.card .who span{font-size:12.5px;font-weight:700;padding:6px 14px;border-radius:100px;border:1.5px solid currentColor;opacity:.8}
-.card h3{font-size:clamp(36px,3.6vw,56px);margin:40px 0 18px}
-.card p{font-size:18px;max-width:440px}
-.card .foot{display:flex;align-items:center;justify-content:space-between;margin-top:40px;padding-top:28px;border-top:1px solid currentColor;border-color:rgba(127,127,127,.25);gap:20px;flex-wrap:wrap}
-.card .pr small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;opacity:.7}
-.card .pr b{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:48px;line-height:1;letter-spacing:-.03em}
-.card .pr b.q{font-size:30px}
-.c1{background:#fff}.c1 .idx{color:var(--teal)}
-.c2{background:var(--ink);color:#B6CDD5}.c2 h3,.c2 .pr b{color:#fff}
-.c3{background:var(--teal);color:#E2F6FC}.c3 h3,.c3 .pr b{color:#fff}.c3 .b-teal{background:var(--ink)}.c3 .b-teal:hover{background:#fff}
-.c4{background:var(--glass);color:#24414C}
-.c5{background:#fff}
-.c2 .b-teal:hover{background:#fff}
-.bundle{margin-top:30px;background:#fff;border-radius:100px;padding:14px 14px 14px 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.bundle p{font-weight:600;color:var(--ink)}
-.bundle p b{color:var(--teal)}
+/* services interactive */
+.svc-g{display:grid;grid-template-columns:1fr 1.1fr;gap:16px}
+.svc-list{background:var(--card);border-radius:var(--r);padding:16px;border:1px solid var(--line)}
+.si{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:0 16px;padding:24px;border-radius:22px;cursor:pointer;transition:.35s}
+.si + .si{margin-top:4px}
+.si .k{font-size:13px;font-weight:600;color:var(--muted)}
+.si h3{font-size:clamp(24px,2.3vw,34px);letter-spacing:-.04em;transition:.35s}
+.si .p{font-size:14.5px;font-weight:600;color:var(--ink);background:var(--bg);padding:7px 13px;border-radius:100px;transition:.35s}
+.si .d{grid-column:2/4;max-height:0;overflow:hidden;opacity:0;transition:.5s cubic-bezier(.2,.8,.2,1);font-size:16px}
+.si:hover:not(.on){background:var(--bg)}
+.si.on{background:var(--sky)}
+.si.on .k{color:var(--teal)}
+.si.on h3{color:var(--teal-d)}
+.si.on .p{background:#fff}
+.si.on .d{max-height:120px;opacity:1;margin-top:10px}
+.svc-view{position:relative;border-radius:var(--r);overflow:hidden;min-height:620px;background:var(--ink)}
+.svc-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.svc-view img.on{opacity:1;transform:scale(1)}
+.svc-view .ov{position:absolute;left:20px;right:20px;bottom:20px;z-index:2;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-radius:24px;padding:20px 20px 20px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.svc-view .ov small{display:block;font-size:13px}
+.svc-view .ov b{font-size:34px;font-weight:600;letter-spacing:-.05em;color:var(--ink);line-height:1.1}
+.svc-view .who{position:absolute;top:20px;left:20px;z-index:2;display:flex;gap:6px}
+.svc-view .who span{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);color:var(--ink);font-size:13px;font-weight:600;padding:7px 13px;border-radius:100px}
+.bundle{margin-top:16px;border-radius:100px;background:var(--ink);color:#B8CAD0;padding:12px 12px 12px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.bundle b{color:#fff;font-weight:600}
 
-/* ===== RESIDENTIAL / COMMERCIAL SPLIT ===== */
-.split{display:flex;height:720px;background:var(--ink)}
-.side{flex:1;position:relative;overflow:hidden;transition:flex 1s cubic-bezier(.2,.8,.2,1);color:#fff;display:flex;align-items:flex-end}
-.side:hover{flex:1.6}
-.side img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
-.side:hover img{transform:scale(1.04)}
-.side::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(6,32,42,.92) 0%,rgba(6,32,42,.3) 55%,rgba(6,32,42,.1))}
-.side + .side{border-left:16px solid var(--ink)}
-.side .ct{position:relative;z-index:2;padding:60px;max-width:620px}
-.side .eyebrow{color:var(--glass)}
-.side h3{color:#fff;font-size:clamp(40px,4.4vw,68px);margin:18px 0 18px}
-.side p{color:#CFE2E8;margin-bottom:22px}
-.side ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
-.side li{font-size:14px;font-weight:600;padding:8px 14px;border-radius:100px;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2)}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.side{position:relative;border-radius:var(--r);overflow:hidden;min-height:640px;display:flex;align-items:flex-end;color:#fff}
+.side img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.side:hover img{transform:scale(1.05)}
+.side::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(10,27,34,.88),rgba(10,27,34,.1) 60%)}
+.side .ct{position:relative;z-index:2;padding:44px}
+.side .pill{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px)}
+.side h3{color:#fff;font-size:clamp(38px,3.8vw,58px);margin:18px 0 14px}
+.side h3 .sf{color:var(--sky-2)}
+.side p{color:#D5E4E9;max-width:440px;margin-bottom:20px}
+.side ul{list-style:none;display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.side li{font-size:14px;font-weight:500;padding:7px 13px;border-radius:100px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(8px)}
 
-/* ===== BEFORE AFTER ===== */
-.ba{padding:140px 0;background:var(--paper)}
-.ba-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:50px}
-.ba-head h2{font-size:clamp(40px,5vw,80px);margin-top:20px}
-.slider{position:relative;aspect-ratio:21/10;border-radius:28px;overflow:hidden;cursor:ew-resize;user-select:none;touch-action:pan-y}
+/* before after */
+.ba-g{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.slider{position:relative;border-radius:var(--r);overflow:hidden;cursor:ew-resize;user-select:none;touch-action:pan-y;min-height:560px}
 .slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
 .slider .top{clip-path:inset(0 50% 0 0)}
-.slider .bar{position:absolute;top:0;bottom:0;left:50%;width:6px;background:#fff;transform:translateX(-50%);box-shadow:0 0 30px rgba(0,0,0,.3)}
-.slider .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:150px;height:62px;border-radius:100px;background:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:800;font-size:13px;letter-spacing:.12em;color:var(--ink);box-shadow:0 10px 30px rgba(0,0,0,.3)}
-.slider .tagx{position:absolute;bottom:26px;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:clamp(28px,4vw,60px);color:#fff;letter-spacing:-.03em;text-shadow:0 4px 30px rgba(0,0,0,.4)}
-.slider .tagx.l{left:34px}.slider .tagx.r{right:34px}
-.ba-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
-.ba-notes > div{background:#fff;border-radius:20px;padding:28px;display:flex;gap:18px}
-.ba-notes svg{width:40px;height:40px;flex:none;color:var(--teal)}
-.ba-notes b{display:block;font-family:'Archivo',sans-serif;font-stretch:115%;font-size:18px;color:var(--ink);margin-bottom:4px}
-.ba-notes p{font-size:15px}
+.slider .bar{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%)}
+.slider .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--ink);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.slider .lb{position:absolute;top:20px;font-size:13px;font-weight:600;padding:7px 14px;border-radius:100px;background:rgba(255,255,255,.9);color:var(--ink)}
+.slider .lb.l{left:20px}.slider .lb.r{right:20px;background:var(--teal);color:#fff}
+.ba-side{display:grid;gap:16px}
+.nb{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.nb .ic{width:52px;height:52px;border-radius:16px;background:var(--sky);color:var(--teal);display:grid;place-items:center}
+.nb .ic svg{width:24px;height:24px}
+.nb h4{font-size:24px;letter-spacing:-.035em;margin-bottom:6px}
+.nb p{font-size:15.5px}
 
-/* ===== BENTO WHY ===== */
-.why{padding:0 0 140px}
-.why h2{font-size:clamp(40px,5vw,80px);margin:20px 0 50px;max-width:900px}
-.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:16px}
-.bx{border-radius:24px;padding:30px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;background:#fff}
-.bx h4{font-size:24px;line-height:1.05}
-.bx p{font-size:15px;margin-top:8px}
-.bx .ic{width:54px;height:54px;border-radius:16px;background:#EAF5F9;color:var(--teal);display:grid;place-items:center}
-.bx .ic svg{width:26px;height:26px}
-.bx.van{grid-column:span 2;grid-row:span 2;padding:0;color:#fff}
+/* why bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;gap:16px}
+.bx{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.bx h4{font-size:24px;letter-spacing:-.035em}
+.bx p{font-size:15px;margin-top:6px}
+.bx .ic{width:52px;height:52px;border-radius:16px;background:var(--sky);color:var(--teal);display:grid;place-items:center}
+.bx .ic svg{width:24px;height:24px}
+.bx.van{grid-column:span 2;grid-row:span 2;padding:0;border:0}
 .bx.van img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.bx.van .cap{position:absolute;left:0;right:0;bottom:0;padding:34px;background:linear-gradient(0deg,rgba(6,32,42,.9),transparent)}
-.bx.van h4{color:#fff;font-size:34px}
-.bx.van .eyebrow{color:var(--glass);margin-bottom:10px}
-.bx.big{background:var(--ink);color:#B6CDD5}
-.bx.big h4{color:#fff}
-.bx.big .yr{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:86px;color:var(--teal);line-height:.85;letter-spacing:-.05em}
-.bx.tl{background:var(--teal);color:#E2F6FC}
-.bx.tl h4{color:#fff}
-.bx.tl .ic{background:rgba(255,255,255,.18);color:#fff}
+.bx.van .tagc{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-radius:22px;padding:20px 24px}
+.bx.van .tagc h4{font-size:22px}
+.bx.teal{background:var(--teal);border:0;color:#E4F6FB}
+.bx.teal h4{color:#fff}
+.bx.teal .big{font-size:84px;font-weight:600;letter-spacing:-.06em;color:#fff;line-height:.9}
+.bx.sky{background:var(--sky);border:0}
+.bx.sky .ic{background:#fff}
 
-/* ===== PROCESS ===== */
-.proc{background:var(--ink);color:#9DB8C2;padding:140px 0;position:relative;overflow:hidden}
-.proc .bg-word{position:absolute;right:-40px;bottom:-60px;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:300px;color:rgba(255,255,255,.03);line-height:1;letter-spacing:-.05em;pointer-events:none;white-space:nowrap}
-.proc-g{display:grid;grid-template-columns:.9fr 1.3fr;gap:90px}
-.proc h2{color:#fff;font-size:clamp(40px,5vw,80px);margin:20px 0 26px}
-.proc .eyebrow{color:var(--glass)}
-.proc-l{position:sticky;top:140px;align-self:start}
-.proc-l p{font-size:18px;margin-bottom:36px}
-.steps{position:relative}
-.steps::before{content:"";position:absolute;left:38px;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.12)}
-.steps .fill{position:absolute;left:38px;top:20px;width:2px;height:0;background:var(--teal);transition:height .2s linear}
-.st{display:flex;gap:36px;padding:36px 0;position:relative}
-.st .n{width:78px;height:78px;border-radius:50%;background:var(--ink-2);border:2px solid rgba(255,255,255,.14);display:grid;place-items:center;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:28px;color:#fff;flex:none;position:relative;z-index:1;transition:.4s}
-.st.on .n{background:var(--teal);border-color:var(--teal)}
-.st h3{color:#fff;font-size:32px;margin:8px 0 10px}
-.st p{font-size:17px;max-width:440px}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.st{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:.4s}
+.st:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-6px)}
+.st:hover h3{color:#fff}
+.st:hover p{color:#9FB3BA}
+.st .n{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:64px;line-height:1;color:var(--teal)}
+.st h3{font-size:26px;letter-spacing:-.035em;margin-bottom:8px;transition:.4s}
+.st p{font-size:15.5px;transition:.4s}
 
-/* ===== GALLERY ===== */
-.gal{padding:140px 0 120px;overflow:hidden}
-.gal-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:50px;flex-wrap:wrap}
-.gal-head h2{font-size:clamp(40px,5vw,80px);margin-top:20px}
-.gal-nav{display:flex;gap:10px}
-.gal-nav button{width:62px;height:62px;border-radius:50%;border:1.5px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--ink);transition:.25s}
-.gal-nav button:hover{background:var(--ink);color:#fff}
-.gal-nav svg{width:22px;height:22px}
-.reel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(32px,calc((100vw - var(--wrap))/2 + 32px)) 10px;scrollbar-width:none;cursor:grab}
+/* gallery */
+.reel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(28px,calc((100vw - var(--wrap))/2 + 28px));scrollbar-width:none;cursor:grab}
 .reel::-webkit-scrollbar{display:none}
-.reel figure{flex:none;width:420px;height:520px;border-radius:24px;overflow:hidden;position:relative;scroll-snap-align:start}
-.reel figure:nth-child(even){width:560px;height:520px}
-.reel img{width:100%;height:100%;object-fit:cover;pointer-events:none}
-.reel figcaption{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:100px;padding:10px 10px 10px 20px;font-weight:700;color:var(--ink);font-size:15px}
-.reel figcaption i{width:36px;height:36px;border-radius:50%;background:var(--teal);display:grid;place-items:center;color:#fff;font-style:normal;font-size:12px;font-family:'Archivo',sans-serif;font-stretch:120%}
+.reel figure{flex:none;width:380px;height:480px;border-radius:var(--r);overflow:hidden;position:relative;scroll-snap-align:start}
+.reel figure:nth-child(3n+2){width:520px}
+.reel img{width:100%;height:100%;object-fit:cover;pointer-events:none;transition:transform 1.2s}
+.reel figure:hover img{transform:scale(1.05)}
+.reel figcaption{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-radius:100px;padding:8px 15px;font-weight:600;color:var(--ink);font-size:14.5px}
+.gnav{display:flex;gap:8px}
+.gnav button{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--ink);transition:.25s}
+.gnav button:hover{background:var(--ink);color:#fff}
+.gnav svg{width:20px;height:20px}
 
-/* ===== PLEDGE ===== */
-.pledge{background:var(--teal);color:#E2F6FC;padding:140px 0;position:relative;overflow:hidden}
-.pledge::before{content:"";position:absolute;width:640px;height:640px;border:90px solid rgba(255,255,255,.07);border-right-color:transparent;left:-220px;top:-200px}
-.pledge .eyebrow{color:#fff}
-.pledge blockquote{font-family:'Archivo',sans-serif;font-stretch:122%;font-weight:900;font-size:clamp(46px,7vw,120px);line-height:.92;letter-spacing:-.04em;color:#fff;margin:26px 0 50px;position:relative}
-.pledge blockquote span{color:var(--ink)}
-.pl-row{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;position:relative}
-.pl-row p{font-size:19px}
-.areas h4{color:#fff;font-size:22px;margin-bottom:18px}
-.areas ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-.areas li{padding:12px 20px;border-radius:100px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:700}
-.areas li.hq{background:var(--ink);border-color:var(--ink)}
-.areas small{display:block;margin-top:18px;font-size:15px}
+/* pledge */
+.pledge{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:80px;text-align:center;position:relative;overflow:hidden}
+.pledge::before{content:"";position:absolute;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,var(--sky) 0%,transparent 65%);left:50%;top:-400px;transform:translateX(-50%)}
+.pledge > *{position:relative}
+.pledge blockquote{font-size:clamp(44px,6vw,100px);font-weight:600;letter-spacing:-.055em;line-height:.95;color:var(--ink);margin:26px auto 30px;max-width:1100px}
+.pledge blockquote .sf{color:var(--teal)}
+.pledge p{max-width:640px;margin:0 auto 46px;font-size:18px}
+.areas{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;align-items:center}
+.areas span{padding:10px 18px;border-radius:100px;border:1px solid var(--line);background:var(--bg);font-weight:500;color:var(--ink)}
+.areas span.hq{background:var(--teal);border-color:var(--teal);color:#fff}
+.areas small{width:100%;margin-top:14px;font-size:14.5px}
 
-/* ===== FAQ ===== */
-.faq{padding:140px 0}
-.faq-g{display:grid;grid-template-columns:.9fr 1.4fr;gap:80px}
-.faq h2{font-size:clamp(40px,4.6vw,72px);margin:20px 0 24px}
-.faq-l{position:sticky;top:140px;align-self:start}
-.blog{margin-top:40px;background:#fff;border-radius:24px;overflow:hidden;display:block;transition:.3s}
-.blog:hover{transform:translateY(-4px);box-shadow:0 30px 50px -30px rgba(6,32,42,.35)}
-.blog img{width:100%;aspect-ratio:2/1;object-fit:cover}
-.blog div{padding:24px 26px 28px}
-.blog small{font-weight:700;color:var(--teal);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
-.blog h4{font-size:21px;line-height:1.15;margin-top:8px;font-stretch:108%}
-details{border-bottom:1px solid var(--line)}
-details:first-child{border-top:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:34px 0;display:flex;justify-content:space-between;align-items:center;gap:30px;font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:700;font-size:clamp(20px,2vw,27px);color:var(--ink);letter-spacing:-.015em;line-height:1.2}
+/* faq */
+.faq-g{display:grid;grid-template-columns:.85fr 1.3fr;gap:16px;align-items:start}
+.faq-l{position:sticky;top:110px;display:grid;gap:16px}
+.faq-l .bxh{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:40px}
+.faq-l h2{font-size:clamp(38px,4vw,60px);margin:20px 0 16px}
+.faq-l h2 .sf{color:var(--teal)}
+.blog{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.35s}
+.blog:hover{transform:translateY(-4px)}
+.blog img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.blog div{padding:22px 26px 26px}
+.blog small{font-size:13px;font-weight:600;color:var(--teal)}
+.blog h4{font-size:20px;letter-spacing:-.03em;line-height:1.2;margin-top:6px}
+.qa{display:grid;gap:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:24px;transition:.3s}
+details[open]{background:var(--sky);border-color:var(--sky)}
+summary{list-style:none;cursor:pointer;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:clamp(19px,1.7vw,23px);font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1.25}
 summary::-webkit-details-marker{display:none}
-summary i{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);flex:none;position:relative;transition:.35s}
-summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:.35s}
+summary i{width:42px;height:42px;border-radius:50%;background:var(--bg);flex:none;position:relative;transition:.35s}
+summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:.35s}
 summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
-details[open] summary i{background:var(--teal);border-color:var(--teal);transform:rotate(180deg)}
+details[open] summary i{background:var(--teal);transform:rotate(180deg)}
 details[open] summary i::before{background:#fff}
 details[open] summary i::after{opacity:0}
-details p{padding:0 80px 34px 0;font-size:18px}
+details p{padding:0 90px 28px 30px;font-size:17px;color:#3E5058}
 
-/* ===== CONTACT ===== */
-.contact{position:relative;padding:140px 0;background:url(images/view.webp) center/cover}
-.contact::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,32,42,.92) 0%,rgba(6,32,42,.65) 60%,rgba(6,32,42,.4))}
+/* contact */
+.contact-box{position:relative;border-radius:36px;overflow:hidden;padding:80px 0;background:url(images/view.webp) center/cover}
+.contact-box::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,27,34,.85),rgba(10,27,34,.35))}
 .ct-g{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.ct-l{color:#C6DBE2}
-.ct-l .eyebrow{color:var(--glass)}
-.ct-l h2{color:#fff;font-size:clamp(44px,5.6vw,92px);margin:20px 0 24px}
-.ct-l h2 span{color:var(--glass)}
-.ct-lines{margin-top:40px;display:grid;gap:12px}
-.ct-lines a,.ct-lines div{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:16px 20px;transition:.25s}
-.ct-lines a:hover{background:rgba(255,255,255,.16)}
-.ct-lines i{width:48px;height:48px;border-radius:14px;background:var(--teal);display:grid;place-items:center;color:#fff;flex:none}
-.ct-lines svg{width:21px;height:21px}
-.ct-lines small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8FB3C0}
-.ct-lines b{color:#fff;font-size:18px;font-weight:700}
-.form{background:#fff;border-radius:28px;padding:46px}
-.form h3{font-size:36px}
-.form > p{margin:10px 0 28px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ct-l{color:#D3E3E8}
+.ct-l .pill{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px)}
+.ct-l h2{color:#fff;font-size:clamp(44px,5.4vw,86px);margin:22px 0 20px}
+.ct-l h2 .sf{color:var(--sky-2)}
+.lines{margin-top:34px;display:grid;gap:10px}
+.lines > *{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:14px 18px;transition:.25s}
+.lines a:hover{background:rgba(255,255,255,.2)}
+.lines i{width:44px;height:44px;border-radius:14px;background:#fff;color:var(--teal);display:grid;place-items:center;flex:none}
+.lines svg{width:20px;height:20px}
+.lines small{display:block;font-size:12.5px;color:#9DBAC4}
+.lines b{color:#fff;font-weight:600;font-size:17px}
+.form{background:#fff;border-radius:28px;padding:40px}
+.form h3{font-size:34px;letter-spacing:-.04em}
+.form > p{margin:8px 0 24px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 form .full{grid-column:1/-1}
-label{font-size:13px;font-weight:700;color:var(--ink);display:block;margin-bottom:6px}
-input,select,textarea{width:100%;padding:16px 18px;border:1.5px solid transparent;border-radius:14px;font:inherit;font-size:16px;color:var(--ink);background:#F1F4F5;transition:.2s}
-input:focus,select:focus,textarea:focus{outline:0;border-color:var(--teal);background:#fff}
+label{font-size:13.5px;font-weight:600;color:var(--ink);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:15px 18px;border:1px solid var(--line);border-radius:16px;font:inherit;font-size:16px;color:var(--ink);background:var(--bg);transition:.2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--teal);background:#fff;box-shadow:0 0 0 4px var(--sky)}
 textarea{min-height:110px;resize:vertical}
-form .btn{width:100%;justify-content:center;padding:20px}
+form .btn{width:100%;justify-content:center;padding:18px}
 
-/* ===== FOOTER ===== */
-footer{background:var(--ink);color:#8DA9B4;padding:100px 0 0;overflow:hidden}
-.f-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:50px;padding-bottom:70px}
-.f-logo img{height:44px;filter:brightness(0) invert(1);margin-bottom:24px}
-footer h4{color:#fff;font-size:15px;font-stretch:120%;letter-spacing:.06em;text-transform:uppercase;margin-bottom:22px}
+/* footer */
+footer{padding:16px 12px 12px}
+.f-box{background:var(--ink);border-radius:36px;color:#8FA6AE;padding:80px 0 0;overflow:hidden}
+.f-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:50px;padding-bottom:60px}
+.f-logo img{height:42px;filter:brightness(0) invert(1);margin-bottom:22px}
+footer h4{color:#fff;font-size:15px;font-weight:600;letter-spacing:-.01em;margin-bottom:18px}
 footer ul{list-style:none}
-footer li{margin-bottom:12px}
+footer li{margin-bottom:10px}
 footer a:hover{color:#fff}
-.soc{display:flex;gap:10px;margin-top:24px}
-.soc a{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;transition:.25s}
-.soc a:hover{background:var(--teal);border-color:var(--teal)}
-.soc svg{width:18px;height:18px;fill:#fff}
-.f-word{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:clamp(60px,13.4vw,220px);line-height:.8;letter-spacing:-.055em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.16);white-space:nowrap;text-align:center;margin-bottom:-.12em;user-select:none}
-.f-bot{border-top:1px solid rgba(255,255,255,.1);padding:26px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;position:relative;background:var(--ink)}
+.soc{display:flex;gap:8px;margin-top:22px}
+.soc a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:.25s}
+.soc a:hover{background:var(--teal)}
+.soc svg{width:17px;height:17px;fill:#fff}
+.f-word{font-size:clamp(70px,15vw,250px);font-weight:600;letter-spacing:-.07em;line-height:.78;text-align:center;color:transparent;background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0));-webkit-background-clip:text;background-clip:text;user-select:none;white-space:nowrap}
+.f-bot{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px}
 .f-bot a{color:#fff;font-weight:600}
 .f-bot a:hover{color:var(--teal)}
 
 .mbar{display:none}
-.rv{opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
 
 @media(max-width:1100px){
-  nav,.h-call{display:none}
+  nav,.hr .tel{display:none}
   .burger{display:block}
-  nav.open{display:block;position:absolute;top:84px;left:32px;right:32px;background:#fff;border-radius:24px;padding:16px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+  nav.open{display:block;position:absolute;top:80px;left:28px;right:28px;background:#fff;border-radius:24px;padding:12px;box-shadow:0 20px 40px rgba(0,0,0,.15)}
   nav.open ul{flex-direction:column}
-  .mullion{display:none}
-  .hint{top:auto;bottom:24px;right:24px;transform:none}
-  .intro-g,.ba-head,.proc-g,.pl-row,.faq-g,.ct-g{grid-template-columns:1fr;gap:40px}
-  .nums{grid-template-columns:1fr 1fr}
-  .num:nth-child(2){border:0;margin-right:0}
-  .card{grid-template-columns:1fr;position:relative;top:auto!important}
-  .card .pic{height:300px}
-  .split{flex-direction:column;height:auto}
-  .side{min-height:560px}
-  .side + .side{border-left:0;border-top:16px solid var(--ink)}
+  .hero-c{grid-template-columns:1fr;padding:0 30px 34px;gap:20px}
+  .chip{display:none}
+  .about-g,.svc-g,.split,.ba-g,.faq-g,.ct-g{grid-template-columns:1fr}
+  .ab-img{min-height:420px}
+  .svc-view{min-height:440px;order:-1}
   .bento{grid-template-columns:1fr 1fr}
-  .proc-l,.faq-l{position:static}
+  .steps{grid-template-columns:1fr 1fr}
+  .faq-l{position:static}
+  .contact-box{padding:50px 0}
   .f-top{grid-template-columns:1fr 1fr}
-  .ba-notes{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  body{font-size:16px;padding-bottom:62px}
-  .wrap,header .bar{padding:0 18px}
-  header{top:10px}
-  header .in{padding:8px 8px 8px 18px}
+  body{font-size:16px;padding-bottom:70px}
+  .wrap,header .in{padding:0 16px}
+  .hr .btn{display:none}
   .logo img{height:30px}
-  .h-r .btn{display:none}
-  .hero{min-height:680px}
-  .hero-c{padding:120px 18px 40px}
-  .intro,.ba,.proc,.gal,.pledge,.faq,.contact{padding:90px 0}
-  .nums{grid-template-columns:1fr}
-  .num{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding-bottom:24px}
-  .card .body{padding:34px 26px}
-  .card .idx{font-size:80px;right:22px;top:26px}
+  .hero{padding:8px}
+  .hero-box{border-radius:28px;min-height:680px}
+  .hero-c{padding:0 22px 26px}
+  .hint{top:96px}
+  .hero-r .b-glass{display:none}
+  .sec{padding:84px 0}
+  .ab-txt{padding:32px 26px}
+  .si{padding:20px 16px;grid-template-columns:30px 1fr}
+  .si .p{grid-column:2;justify-self:start;margin-top:8px}
+  .si .d{grid-column:2}
+  .side{min-height:520px}
+  .side .ct{padding:28px}
+  .slider{min-height:340px}
   .bento{grid-template-columns:1fr;grid-auto-rows:auto}
   .bx{min-height:200px}
   .bx.van{grid-column:auto;grid-row:auto;min-height:380px}
-  .side .ct{padding:34px 24px}
-  .slider{aspect-ratio:4/3}
-  .slider .knob{width:62px}
-  .slider .knob span{display:none}
-  .reel figure,.reel figure:nth-child(even){width:84vw;height:420px}
-  .bundle{border-radius:24px;padding:22px}
-  .form{padding:30px 22px}
+  .steps{grid-template-columns:1fr}
+  .st{min-height:220px}
+  .reel figure,.reel figure:nth-child(3n+2){width:82vw;height:400px}
+  .pledge{padding:56px 22px}
+  details p{padding-right:30px}
+  .contact-box{padding:40px 0;border-radius:28px}
+  .form{padding:28px 20px}
   form{grid-template-columns:1fr}
-  details p{padding-right:0}
+  .bundle{border-radius:24px;padding:20px}
   .f-top{grid-template-columns:1fr}
-  .marq span{font-size:24px}
-  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:90}
-  .mbar a{padding:19px;text-align:center;font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;color:#fff;background:var(--ink)}
+  .f-box{border-radius:28px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:8px;right:8px;bottom:8px;z-index:90}
+  .mbar a{padding:16px;text-align:center;font-weight:600;color:#fff;background:var(--ink);border-radius:100px}
   .mbar a+a{background:var(--teal)}
 }
 </style>
@@ -358,199 +353,180 @@ footer a:hover{color:#fff}
 <body>
 
 <header>
-  <div class="bar">
-    <div class="in">
-      <a href="#" class="logo"><img src="images/logo.webp" alt="Clearview Cleaning"></a>
-      <nav id="nav"><ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">How It Works</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#faq">Blog</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul></nav>
-      <div class="h-r">
-        <a class="h-call" href="tel:4036408943"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></i>(403) 640-8943</a>
-        <a href="#contact" class="btn b-ink">Request Estimate</a>
-        <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
-      </div>
+  <div class="in"><div class="bar">
+    <a href="#" class="logo"><img src="images/logo.webp" alt="Clearview Cleaning"></a>
+    <nav id="nav"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#faq">Blog</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul></nav>
+    <div class="hr">
+      <a class="tel" href="tel:4036408943">(403) 640-8943</a>
+      <a href="#contact" class="btn b-teal">Request Estimate</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
     </div>
-  </div>
+  </div></div>
 </header>
 
-<!-- HERO: fogged window you wipe clean -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-img"></div>
-  <canvas id="fog"></canvas>
-    <div class="hint" id="hint"><i></i>Wipe the glass</div>
-  <div class="hero-c">
-    <span class="eyebrow">Calgary's Window Cleaning Experts &nbsp;/&nbsp; Since 1988</span>
-    <h1>Enjoy the <span class="t">view</span> <span class="o">again.</span></h1>
-    <div class="hero-row">
-      <p>Windows, gutters, pressure and soft washing, high dusting and greenhouse cleaning for Calgary homes and businesses.</p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn b-teal">Book Your Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="#services" class="btn b-glass">See Services</a>
+  <div class="hero-box">
+    <div class="hero-img"></div>
+    <canvas id="fog"></canvas>
+    <div class="hint" id="hint"><i></i>Drag to wipe the glass</div>
+    <div class="chip a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></i><div><b>Since 1988</b><small>Fully insured crew</small></div></div>
+    <div class="chip b"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></i><div><b>Same-day</b><small>Scheduling available</small></div></div>
+    <div class="hero-c">
+      <div>
+        <span class="pill">Calgary's Window Cleaning Experts</span>
+        <h1>Enjoy the <span class="sf">view</span> again.</h1>
+      </div>
+      <div class="hero-r">
+        <p>Windows, gutters, pressure and soft washing, high dusting and greenhouse cleaning for Calgary homes and businesses.</p>
+        <div class="ctas">
+          <a href="#contact" class="btn b-white">Book Your Estimate <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a href="tel:4036408943" class="btn b-glass">(403) 640-8943</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="marq"><div class="tr" id="mq">
-  <span>Window Cleaning</span><span>Gutter Cleaning</span><span>Pressure Washing</span><span>Soft Washing</span><span>High Dusting</span><span>Greenhouse Cleaning</span>
+<div class="trust"><div class="wrap">
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/></svg>Fully insured</div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>On time, on budget</div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18"/></svg>Same-day scheduling</div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 014 13c0-6 7-11 16-11-1 9-6 16-12 16"/></svg>Eco-responsible products</div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M8 6h8"/></svg>Water-fed pole safety</div>
 </div></div>
 
-<!-- INTRO + NUMBERS -->
-<section class="intro" id="about">
-  <div class="wrap">
-    <div class="intro-g rv">
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap about-g">
+    <div class="ab-txt rv">
       <div>
-        <span class="eyebrow">About Clearview Cleaning</span>
-        <h2>Serving the Calgary area for <em>over 35 years.</em></h2>
+        <span class="pill">About Clearview Cleaning</span>
+        <h2>Calgary's window cleaners for <span class="sf">over 35 years.</span></h2>
+        <p style="font-size:18px">Residential and commercial window, gutter and exterior cleaning by a fully insured crew that finishes on time and on budget. Environmentally responsible products, water-fed poles for safer work, and same-day scheduling.</p>
       </div>
-      <p>Residential and commercial window, gutter and exterior cleaning, done by a fully insured crew that finishes on time and on budget. Environmentally responsible products, water-fed poles for safer work, and same-day scheduling.</p>
+      <div class="stats">
+        <div><b data-c="1988">1988</b><span>Year we started</span></div>
+        <div><b><span data-c="35">35</span><span class="sf">+</span></b><span>Years of experience</span></div>
+        <div><b>1 <span class="sf">day</span></b><span>Quote turnaround</span></div>
+      </div>
     </div>
-    <div class="nums rv">
-      <div class="num"><b data-c="1988">1988</b><span>Year we started</span></div>
-      <div class="num"><b><span data-c="35">35</span><sup>+</sup></b><span>Years of experience</span></div>
-      <div class="num"><b>1<sup>day</sup></b><span>Quote turnaround (business day)</span></div>
-      <div class="num"><b><span data-c="5">5</span></b><span>Specialized cleaning services</span></div>
+    <div class="ab-img rv">
+      <img src="images/van.webp" alt="Clearview Cleaning service van">
+      <div class="tagc"><div><b>Residential + commercial</b><br><span>Calgary and surrounding communities</span></div><a href="#contact" class="btn b-teal">Get in Touch</a></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES STACK -->
-<section class="svc" id="services">
+<!-- SERVICES -->
+<section class="sec" id="services" style="padding-top:0">
   <div class="wrap">
-    <div class="svc-head rv">
-      <div><span class="eyebrow">Cleaning Services</span><h2>Five services.<br>One crew.</h2></div>
-      <p>Every job is quoted to your property. Package discounts apply when window cleaning is combined with gutter cleaning or pressure washing.</p>
+    <div class="head rv">
+      <div><span class="pill">Cleaning Services</span><h2>Five services, <span class="sf">one trusted crew.</span></h2></div>
+      <p>Pick a service to see what's included and where pricing starts. Every job is quoted to your property.</p>
     </div>
-    <div class="stack">
-      <article class="card c1">
-        <div class="pic"><img src="images/interior-view.webp" alt="Water-fed pole cleaning windows on a modern home"></div>
-        <div class="body"><span class="idx">01</span>
-          <div class="who"><span>Residential</span><span>Commercial</span></div>
-          <h3>Window Cleaning</h3>
-          <p>Streak-free glass for Calgary homes and businesses, inside and out, using water-fed poles that keep ladder work to a minimum.</p>
-          <div class="foot"><div class="pr"><small>From</small><b>$150</b></div><a href="#contact" class="btn b-teal">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-      </article>
-      <article class="card c2">
-        <div class="pic"><img src="images/gutter.webp" alt="Gloved hand scooping leaves out of a gutter"></div>
-        <div class="body"><span class="idx" style="color:#fff">02</span>
-          <div class="who"><span>Residential</span><span>Commercial</span></div>
-          <h3>Gutter Cleaning</h3>
-          <p>Leaves and debris cleared out of your gutters so water drains away properly and your home stays protected from water damage.</p>
-          <div class="foot"><div class="pr"><small>From</small><b>$150</b></div><a href="#contact" class="btn b-teal">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-      </article>
-      <article class="card c3">
-        <div class="pic"><img src="images/soft-washing.webp" alt="Soft washing vinyl siding on a house"></div>
-        <div class="body"><span class="idx" style="color:#fff">03</span>
-          <div class="who"><span>Residential</span><span>Commercial</span></div>
-          <h3>Pressure &amp; Soft Washing</h3>
-          <p>High-pressure cleaning for hard surfaces and gentle soft washing for siding and delicate exteriors across Calgary and the surrounding area.</p>
-          <div class="foot"><div class="pr"><small>From</small><b>$175</b></div><a href="#contact" class="btn b-teal">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-      </article>
-      <article class="card c4">
-        <div class="pic"><img src="images/high-dusting.webp" alt="High dusting ducts in a gym"></div>
-        <div class="body"><span class="idx" style="color:var(--ink)">04</span>
-          <div class="who"><span>Commercial</span></div>
-          <h3>High Dusting</h3>
-          <p>Dust removed from ducts, beams and fixtures up high. Recommended for restaurants, gyms, office spaces and warehouses.</p>
-          <div class="foot"><div class="pr"><small>Pricing</small><b class="q">Free quote</b></div><a href="#contact" class="btn b-ink">Get a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-      </article>
-      <article class="card c5">
-        <div class="pic"><img src="images/greenhouse.webp" alt="Clearview crew inside a commercial greenhouse"></div>
-        <div class="body"><span class="idx" style="color:var(--teal)">05</span>
-          <div class="who"><span>Commercial</span></div>
-          <h3>Greenhouse Cleaning</h3>
-          <p>Greenhouses cleaned and sanitized with custom equipment our team built specifically for the job.</p>
-          <div class="foot"><div class="pr"><small>Pricing</small><b class="q">Free quote</b></div><a href="#contact" class="btn b-ink">Get a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-      </article>
+    <div class="svc-g rv">
+      <div class="svc-list" id="svcList">
+        <div class="si on" data-i="0"><span class="k">01</span><h3>Window Cleaning</h3><span class="p">From $150</span><p class="d">Streak-free glass for homes and businesses, inside and out, using water-fed poles that keep ladder work to a minimum.</p></div>
+        <div class="si" data-i="1"><span class="k">02</span><h3>Gutter Cleaning</h3><span class="p">From $150</span><p class="d">Leaves and debris cleared out so water drains away properly and your home stays protected from water damage.</p></div>
+        <div class="si" data-i="2"><span class="k">03</span><h3>Pressure &amp; Soft Washing</h3><span class="p">From $175</span><p class="d">High-pressure cleaning for hard surfaces and gentle soft washing for siding and delicate exteriors.</p></div>
+        <div class="si" data-i="3"><span class="k">04</span><h3>High Dusting</h3><span class="p">Free quote</span><p class="d">Dust removed from ducts, beams and fixtures up high. Recommended for restaurants, gyms, office spaces and warehouses.</p></div>
+        <div class="si" data-i="4"><span class="k">05</span><h3>Greenhouse Cleaning</h3><span class="p">Free quote</span><p class="d">Greenhouses cleaned and sanitized with custom equipment our team built specifically for the job.</p></div>
+      </div>
+      <div class="svc-view" id="svcView">
+        <img class="on" src="images/interior-view.webp" alt="Water-fed pole cleaning windows on a modern home">
+        <img src="images/gutter.webp" alt="Gloved hand scooping leaves out of a gutter">
+        <img src="images/soft-washing.webp" alt="Soft washing vinyl siding on a house">
+        <img src="images/high-dusting.webp" alt="High dusting ducts in a gym">
+        <img src="images/greenhouse.webp" alt="Clearview crew inside a commercial greenhouse">
+        <div class="who" id="svcWho"><span>Residential</span><span>Commercial</span></div>
+        <div class="ov"><div><small id="svcLbl">Starting from</small><b id="svcPr">$150</b></div><a href="#contact" class="btn b-teal">Book Now <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      </div>
     </div>
-    <div class="bundle rv">
-      <p><b>Bundle and save:</b> combine window cleaning with gutter cleaning or pressure washing.</p>
-      <a href="#contact" class="btn b-ink">Get My Quote</a>
-    </div>
+    <div class="bundle rv"><p><b>Bundle and save.</b> Package discounts apply when window cleaning is combined with gutter cleaning or pressure washing.</p><a href="#contact" class="btn b-white">Get My Quote <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
   </div>
 </section>
 
 <!-- RESIDENTIAL / COMMERCIAL -->
-<section class="split">
-  <div class="side">
-    <img src="images/house-interior.webp" alt="Bright living room with floor-to-ceiling clean windows">
-    <div class="ct">
-      <span class="eyebrow">Residential</span>
-      <h3>For your home.</h3>
-      <p>Keeping windows clean in Calgary is a challenge. We take care of the glass, the gutters and the exterior.</p>
-      <ul><li>Windows from $150</li><li>Gutters from $150</li><li>Pressure &amp; soft washing from $175</li></ul>
-      <a href="#contact" class="btn b-teal">Make Appointment</a>
+<section class="sec" style="padding-top:0">
+  <div class="wrap split">
+    <div class="side rv">
+      <img src="images/house-interior.webp" alt="Bright living room with floor-to-ceiling clean windows">
+      <div class="ct">
+        <span class="pill">Residential</span>
+        <h3>For your <span class="sf">home.</span></h3>
+        <p>Keeping windows clean in Calgary is a challenge. We take care of the glass, the gutters and the exterior.</p>
+        <ul><li>Windows from $150</li><li>Gutters from $150</li><li>Pressure &amp; soft washing from $175</li></ul>
+        <a href="#contact" class="btn b-white">Make Appointment <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
     </div>
-  </div>
-  <div class="side">
-    <img src="images/before.webp" alt="Commercial building windows" style="object-position:35% center">
-    <div class="ct">
-      <span class="eyebrow">Commercial</span>
-      <h3>For your business.</h3>
-      <p>Storefronts, offices, gyms, restaurants, warehouses and greenhouses, finished on time and on budget.</p>
-      <ul><li>Commercial windows</li><li>High dusting</li><li>Greenhouse cleaning</li><li>Pressure washing</li></ul>
-      <a href="#contact" class="btn b-teal">Book Your Project</a>
-    </div>
-  </div>
-</section>
-
-<!-- BEFORE / AFTER -->
-<section class="ba">
-  <div class="wrap">
-    <div class="ba-head rv">
-      <div><span class="eyebrow">See The Difference</span><h2>Drag to see a Clearview clean.</h2></div>
-      <p style="font-size:19px">Real commercial windows, before and after our crew. Hard water streaks gone, reflections crisp again.</p>
-    </div>
-    <div class="slider rv" id="slider">
-      <img src="images/after.webp" alt="Windows after cleaning">
-      <img src="images/before.webp" class="top" id="baTop" alt="Windows before cleaning">
-      <span class="tagx l">Before</span><span class="tagx r">After</span>
-      <div class="bar" id="baBar"></div>
-      <div class="knob" id="baKnob"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg><span>DRAG</span></div>
-    </div>
-    <div class="ba-notes rv">
-      <div><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 4v32M13 9h14"/><circle cx="20" cy="36" r="2"/></svg><div><b>Water-fed poles</b><p>High glass reached from the ground, with less ladder use.</p></div></div>
-      <div><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 34A12 12 0 016 22C6 12 18 4 34 4c-2 16-10 28-20 28"/><path d="M6 36c5-10 12-15 19-18"/></svg><div><b>Eco-responsible</b><p>Environmentally responsible cleaning products.</p></div></div>
-      <div><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 4l13 5v10c0 8-5.6 15.6-13 18-7.4-2.4-13-10-13-18V9z"/><path d="M14 20l4 4 8-8"/></svg><div><b>Fully insured</b><p>Every residential and commercial job is covered.</p></div></div>
+    <div class="side rv">
+      <img src="images/before.webp" alt="Commercial building windows" style="object-position:35% center">
+      <div class="ct">
+        <span class="pill">Commercial</span>
+        <h3>For your <span class="sf">business.</span></h3>
+        <p>Storefronts, offices, gyms, restaurants, warehouses and greenhouses, finished on time and on budget.</p>
+        <ul><li>Commercial windows</li><li>High dusting</li><li>Greenhouse cleaning</li><li>Pressure washing</li></ul>
+        <a href="#contact" class="btn b-white">Book Your Project <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- WHY BENTO -->
-<section class="why">
+<!-- BEFORE AFTER -->
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <div class="rv"><span class="eyebrow">Why Clearview</span><h2>The crew Calgary has trusted since 1988.</h2></div>
+    <div class="head rv">
+      <div><span class="pill">See The Difference</span><h2>Drag to see a <span class="sf">Clearview clean.</span></h2></div>
+      <p>Real commercial windows, before and after our crew. Hard water streaks gone, reflections crisp again.</p>
+    </div>
+    <div class="ba-g rv">
+      <div class="slider" id="slider">
+        <img src="images/after.webp" alt="Windows after cleaning">
+        <img src="images/before.webp" class="top" id="baTop" alt="Windows before cleaning">
+        <span class="lb l">Before</span><span class="lb r">After</span>
+        <div class="bar" id="baBar"></div>
+        <div class="knob" id="baKnob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="ba-side">
+        <div class="nb"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M8 6h8"/></svg></span><div><h4>Water-fed poles</h4><p>High glass reached from the ground, with less ladder use.</p></div></div>
+        <div class="nb"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 014 13c0-6 7-11 16-11-1 9-6 16-12 16"/><path d="M4 21c3-6 7-9 11-11"/></svg></span><div><h4>Eco-responsible</h4><p>Environmentally responsible cleaning products.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="pill">Why Clearview</span><h2>The crew Calgary <span class="sf">has trusted since 1988.</span></h2></div>
+    </div>
     <div class="bento rv">
-      <div class="bx van"><img src="images/van.webp" alt="Clearview Cleaning service van"><div class="cap"><span class="eyebrow">Local &amp; Insured</span><h4>Look for the Clearview van around Calgary.</h4></div></div>
-      <div class="bx big"><span class="yr">35+</span><div><h4>Years of experience</h4><p>Serving the Calgary area since 1988.</p></div></div>
+      <div class="bx van"><img src="images/hero-glass.webp" alt="Clearview crew member cleaning glass railings"><div class="tagc"><h4>Specialized in residential and commercial work</h4><p>From family homes to warehouses and greenhouses.</p></div></div>
+      <div class="bx teal"><span class="big"><span data-c="35">35</span>+</span><div><h4>Years of experience</h4><p>Serving the Calgary area since 1988.</p></div></div>
+      <div class="bx"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><h4>Fully insured</h4><p>Peace of mind on every property.</p></div></div>
+      <div class="bx sky"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>On time, on budget</h4><p>Finished when promised, at the price quoted.</p></div></div>
       <div class="bx"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><div><h4>Same-day scheduling</h4><p>Get your job booked in quickly.</p></div></div>
-      <div class="bx tl"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>On time, on budget</h4><p>Projects finished when promised, at the price quoted.</p></div></div>
-      <div class="bx"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span><div><h4>Residential + commercial</h4><p>Specialized in both, homes to warehouses.</p></div></div>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="proc" id="process">
-  <div class="bg-word">CLEARVIEW</div>
-  <div class="wrap proc-g">
-    <div class="proc-l rv">
-      <span class="eyebrow">How It Works</span>
-      <h2>Four steps to a clear view.</h2>
-      <p>Tell us what you need and we'll send a quote within one business day.</p>
-      <a href="#contact" class="btn b-teal">Request Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<section class="sec" id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="pill">How It Works</span><h2>Four steps to a <span class="sf">clear view.</span></h2></div>
+      <a href="#contact" class="btn b-dark">Request Estimate <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
-    <div class="steps" id="steps"><div class="fill" id="fill"></div>
+    <div class="steps rv">
       <div class="st"><span class="n">01</span><div><h3>Share your needs</h3><p>Reach out through our contact page and tell us about your property.</p></div></div>
       <div class="st"><span class="n">02</span><div><h3>Fill out the form</h3><p>A few quick details so we can price the job accurately.</p></div></div>
       <div class="st"><span class="n">03</span><div><h3>Get your quote</h3><p>Your quote arrives within one business day.</p></div></div>
@@ -559,51 +535,42 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
-<!-- GALLERY REEL -->
-<section class="gal">
-  <div class="wrap gal-head rv">
-    <div><span class="eyebrow">On The Job</span><h2>Recent work.</h2></div>
-    <div class="gal-nav"><button id="gp" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button id="gn" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+<!-- GALLERY -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap head rv">
+    <div><span class="pill">On The Job</span><h2>Recent <span class="sf">work.</span></h2></div>
+    <div class="gnav"><button id="gp" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button id="gn" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
   </div>
   <div class="reel rv" id="reel">
-    <figure><img src="images/hero-glass.webp" alt="Crew member cleaning a glass railing"><figcaption>Glass railings<i>01</i></figcaption></figure>
-    <figure><img src="images/greenhouse.webp" alt="Clearview crew in a greenhouse"><figcaption>Greenhouse cleaning<i>02</i></figcaption></figure>
-    <figure><img src="images/high-dusting.webp" alt="High dusting in a gym"><figcaption>High dusting<i>03</i></figcaption></figure>
-    <figure><img src="images/pressure-washing.webp" alt="Pressure washing concrete"><figcaption>Pressure washing<i>04</i></figcaption></figure>
-    <figure><img src="images/gutter-home.webp" alt="Gutter on a Calgary home"><figcaption>Gutter cleaning<i>05</i></figcaption></figure>
-    <figure><img src="images/after.webp" alt="Clean commercial windows"><figcaption>Commercial windows<i>06</i></figcaption></figure>
+    <figure><img src="images/greenhouse.webp" alt="Clearview crew in a greenhouse"><figcaption>Greenhouse cleaning</figcaption></figure>
+    <figure><img src="images/high-dusting.webp" alt="High dusting in a gym"><figcaption>High dusting</figcaption></figure>
+    <figure><img src="images/pressure-washing.webp" alt="Pressure washing concrete"><figcaption>Pressure washing</figcaption></figure>
+    <figure><img src="images/gutter-home.webp" alt="Gutter on a Calgary home"><figcaption>Gutter cleaning</figcaption></figure>
+    <figure><img src="images/after.webp" alt="Clean commercial windows"><figcaption>Commercial windows</figcaption></figure>
+    <figure><img src="images/hero-glass.webp" alt="Crew member cleaning a glass railing"><figcaption>Glass railings</figcaption></figure>
   </div>
 </section>
 
 <!-- PLEDGE -->
-<section class="pledge">
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <span class="eyebrow rv">Satisfaction Pledge</span>
-    <blockquote class="rv">We aren't satisfied until <span>you're satisfied.</span></blockquote>
-    <div class="pl-row rv">
+    <div class="pledge rv">
+      <span class="pill">Satisfaction Pledge</span>
+      <blockquote>We aren't satisfied until <span class="sf">you're satisfied.</span></blockquote>
       <p>We aim for full client satisfaction on every job. Talk to the crew from the moment we arrive until the work is complete, and we'll keep going until you're happy with the result.</p>
-      <div class="areas">
-        <h4>Calgary and surrounding communities</h4>
-        <ul><li class="hq">Calgary</li><li>Airdrie</li><li>Cochrane</li><li>Chestermere</li><li>Okotoks</li><li>Diamond Valley</li></ul>
-        <small>Not on the list? Contact us to confirm availability.</small>
-      </div>
+      <div class="areas"><span class="hq">Calgary</span><span>Airdrie</span><span>Cochrane</span><span>Chestermere</span><span>Okotoks</span><span>Diamond Valley</span><small>Serving Calgary and surrounding communities. Not on the list? Contact us to confirm availability.</small></div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq" id="faq">
+<section class="sec" id="faq" style="padding-top:0">
   <div class="wrap faq-g">
     <div class="faq-l rv">
-      <span class="eyebrow">FAQ</span>
-      <h2>Good questions.</h2>
-      <p style="font-size:18px">Still curious? Call (403) 640-8943 or send us a message.</p>
-      <a href="#" class="blog">
-        <img src="images/gutter-home.webp" alt="Clean gutter on a Calgary home">
-        <div><small>From the blog</small><h4>Gutter Cleaning in Calgary: Keeping Homes Safe and Protected from Fallen Leaves and Debris</h4></div>
-      </a>
+      <div class="bxh"><span class="pill">FAQ</span><h2>Good <span class="sf">questions.</span></h2><p>Still curious? Call (403) 640-8943 or send us a message.</p></div>
+      <a href="#" class="blog"><img src="images/gutter-home.webp" alt="Clean gutter on a Calgary home"><div><small>From the blog</small><h4>Gutter Cleaning in Calgary: Keeping Homes Safe and Protected from Fallen Leaves and Debris</h4></div></a>
     </div>
-    <div class="rv">
+    <div class="qa rv">
       <details open><summary>What cleaning services does Clearview offer in Calgary?<i></i></summary><p>Window cleaning, gutter cleaning, pressure washing, soft washing, high dusting and greenhouse cleaning for residential and commercial properties in Calgary and nearby communities.</p></details>
       <details><summary>How much does window cleaning cost in Calgary?<i></i></summary><p>Residential window cleaning starts at $150. The final price depends on the size of your home, the number of windows and how accessible they are. Package discounts apply when you combine it with gutter cleaning or pressure washing.</p></details>
       <details><summary>What areas does Clearview Cleaning serve?<i></i></summary><p>Calgary and the surrounding area, including Airdrie, Cochrane, Chestermere, Okotoks and Diamond Valley. Contact us to confirm availability in your community.</p></details>
@@ -613,119 +580,116 @@ footer a:hover{color:#fff}
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="wrap ct-g">
-    <div class="ct-l rv">
-      <span class="eyebrow">Contact Us</span>
-      <h2>Ready to enjoy <span>the view?</span></h2>
-      <p style="font-size:19px">Send a message and we'll reply within one business day with your quote.</p>
-      <div class="ct-lines">
-        <a href="tel:4036408943"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></i><span><small>Call</small><b>(403) 640-8943</b></span></a>
-        <a href="mailto:clearview@clearviewcleaning.ca"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></i><span><small>Email</small><b>clearview@clearviewcleaning.ca</b></span></a>
-        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><span><small>Hours</small><b>Monday to Friday, 9:00 am to 5:00 pm</b></span></div>
+<section id="contact" style="padding:0 12px">
+  <div class="contact-box">
+    <div class="wrap ct-g">
+      <div class="ct-l rv">
+        <span class="pill">Contact Us</span>
+        <h2>Ready to enjoy <span class="sf">the view?</span></h2>
+        <p style="font-size:18px">Send a message and we'll reply within one business day with your quote.</p>
+        <div class="lines">
+          <a href="tel:4036408943"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></i><span><small>Call</small><b>(403) 640-8943</b></span></a>
+          <a href="mailto:clearview@clearviewcleaning.ca"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></i><span><small>Email</small><b>clearview@clearviewcleaning.ca</b></span></a>
+          <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><span><small>Hours</small><b>Monday to Friday, 9:00 am to 5:00 pm</b></span></div>
+        </div>
       </div>
-    </div>
-    <div class="form rv">
-      <h3>Send a Message</h3>
-      <p>Tell us a little about your property and the service you need.</p>
-      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We\'ll be in touch.'">
-        <div><label for="n">Name</label><input id="n" required></div>
-        <div><label for="p">Phone</label><input id="p" type="tel" required></div>
-        <div class="full"><label for="e">Email</label><input id="e" type="email" required></div>
-        <div class="full"><label for="s">Service</label><select id="s"><option>Window Cleaning</option><option>Gutter Cleaning</option><option>Pressure &amp; Soft Washing</option><option>High Dusting</option><option>Greenhouse Cleaning</option></select></div>
-        <div class="full"><label for="m">Message</label><textarea id="m"></textarea></div>
-        <div class="full"><button class="btn b-teal" type="submit">Book Your Estimate</button></div>
-      </form>
+      <div class="form rv">
+        <h3>Send a Message</h3>
+        <p>Tell us a little about your property and the service you need.</p>
+        <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We\'ll be in touch.'">
+          <div><label for="n">Name</label><input id="n" required></div>
+          <div><label for="p">Phone</label><input id="p" type="tel" required></div>
+          <div class="full"><label for="e">Email</label><input id="e" type="email" required></div>
+          <div class="full"><label for="s">Service</label><select id="s"><option>Window Cleaning</option><option>Gutter Cleaning</option><option>Pressure &amp; Soft Washing</option><option>High Dusting</option><option>Greenhouse Cleaning</option></select></div>
+          <div class="full"><label for="m">Message</label><textarea id="m"></textarea></div>
+          <div class="full"><button class="btn b-teal" type="submit">Book Your Estimate</button></div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">
-    <div class="f-top">
-      <div>
-        <div class="f-logo"><img src="images/logo.webp" alt="Clearview Cleaning"></div>
-        <p>Calgary's window cleaning experts since 1988. Residential and commercial window, gutter and exterior cleaning.</p>
-        <div class="soc">
-          <a href="https://www.facebook.com/clearviewcleaning.ca" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-3.3 0-4 2.4-4 4v3H7v4h3v11h4V12h3.4l.6-4z"/></svg></a>
-          <a href="https://www.instagram.com/clearviewcleaningyyc/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.3 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM16 1.2C14.3 1.1 9.7 1.1 8 1.2 4.3 1.4 1.4 4.3 1.2 8c-.1 1.7-.1 6.3 0 8 .2 3.7 3.1 6.6 6.8 6.8 1.7.1 6.3.1 8 0 3.7-.2 6.6-3.1 6.8-6.8.1-1.7.1-6.3 0-8-.2-3.7-3.1-6.6-6.8-6.8zm4.6 14.7c-.1 2.6-2.1 4.6-4.7 4.7-1.6.1-6.2.1-7.8 0-2.6-.1-4.6-2.1-4.7-4.7-.1-1.6-.1-6.2 0-7.8.1-2.6 2.1-4.6 4.7-4.7 1.6-.1 6.2-.1 7.8 0 2.6.1 4.6 2.1 4.7 4.7.1 1.6.1 6.2 0 7.8z"/></svg></a>
+  <div class="f-box">
+    <div class="wrap">
+      <div class="f-top">
+        <div>
+          <div class="f-logo"><img src="images/logo.webp" alt="Clearview Cleaning"></div>
+          <p>Calgary's window cleaning experts since 1988. Residential and commercial window, gutter and exterior cleaning.</p>
+          <div class="soc">
+            <a href="https://www.facebook.com/clearviewcleaning.ca" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-3.3 0-4 2.4-4 4v3H7v4h3v11h4V12h3.4l.6-4z"/></svg></a>
+            <a href="https://www.instagram.com/clearviewcleaningyyc/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.3 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM16 1.2C14.3 1.1 9.7 1.1 8 1.2 4.3 1.4 1.4 4.3 1.2 8c-.1 1.7-.1 6.3 0 8 .2 3.7 3.1 6.6 6.8 6.8 1.7.1 6.3.1 8 0 3.7-.2 6.6-3.1 6.8-6.8.1-1.7.1-6.3 0-8-.2-3.7-3.1-6.6-6.8-6.8zm4.6 14.7c-.1 2.6-2.1 4.6-4.7 4.7-1.6.1-6.2.1-7.8 0-2.6-.1-4.6-2.1-4.7-4.7-.1-1.6-.1-6.2 0-7.8.1-2.6 2.1-4.6 4.7-4.7 1.6-.1 6.2-.1 7.8 0 2.6.1 4.6 2.1 4.7 4.7.1 1.6.1 6.2 0 7.8z"/></svg></a>
+          </div>
         </div>
+        <div><h4>Services</h4><ul><li><a href="#services">Window Cleaning</a></li><li><a href="#services">Gutter Cleaning</a></li><li><a href="#services">Pressure Washing</a></li><li><a href="#services">High Dusting</a></li><li><a href="#services">Greenhouse Cleaning</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="#about">About Clearview Cleaning</a></li><li><a href="#process">How It Works</a></li><li><a href="#faq">FAQ</a></li><li><a href="#faq">Blog</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+        <div><h4>Get in Touch</h4><ul><li><a href="tel:4036408943">(403) 640-8943</a></li><li><a href="mailto:clearview@clearviewcleaning.ca">clearview@clearviewcleaning.ca</a></li><li>160155 Hwy 549 W, Foothills, AB</li><li>Monday to Friday, 9:00 am to 5:00 pm</li></ul></div>
       </div>
-      <div><h4>Services</h4><ul><li><a href="#services">Window Cleaning</a></li><li><a href="#services">Gutter Cleaning</a></li><li><a href="#services">Pressure Washing</a></li><li><a href="#services">High Dusting</a></li><li><a href="#services">Greenhouse Cleaning</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="#about">About Clearview Cleaning</a></li><li><a href="#process">How It Works</a></li><li><a href="#faq">FAQ</a></li><li><a href="#faq">Blog</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
-      <div><h4>Get in Touch</h4><ul><li><a href="tel:4036408943">(403) 640-8943</a></li><li><a href="mailto:clearview@clearviewcleaning.ca">clearview@clearviewcleaning.ca</a></li><li>160155 Hwy 549 W, Foothills, AB</li><li>Monday to Friday, 9:00 am to 5:00 pm</li></ul></div>
+      <div class="f-word">Clearview</div>
+      <div class="f-bot">
+        <span>© <span id="yr"></span> Clearview Cleaning. All rights reserved.</span>
+        <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+      </div>
     </div>
-    <div class="f-word">CLEARVIEW</div>
   </div>
-  <div class="f-bot"><div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;width:100%">
-    <span>© <span id="yr"></span> Clearview Cleaning. All rights reserved.</span>
-    <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
-  </div></div>
 </footer>
 
 <div class="mbar"><a href="tel:4036408943">Call Now</a><a href="#contact">Get Estimate</a></div>
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
-/* marquee duplicate */
-const mq=document.getElementById('mq');mq.innerHTML+=mq.innerHTML;
 
-/* ===== FOG CANVAS ===== */
+/* fogged glass hero */
 (function(){
-  const cv=document.getElementById('fog'),ctx=cv.getContext('2d'),hero=document.querySelector('.hero'),hint=document.getElementById('hint');
+  const cv=document.getElementById('fog'),ctx=cv.getContext('2d'),box=document.querySelector('.hero-box'),hint=document.getElementById('hint');
   const img=new Image();img.src='images/hero-glass.webp';
-  let W,H,dpr=Math.min(window.devicePixelRatio||1,2),last=null,wiped=0;
+  let W,H,dpr=Math.min(devicePixelRatio||1,2),last=null,n=0;
   function cover(){const r=Math.max(W/img.width,H/img.height),w=img.width*r,h=img.height*r;return[(W-w)/2,(H-h)*.35,w,h]}
   function paint(){
-    W=hero.clientWidth;H=hero.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    W=box.clientWidth;H=box.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
     ctx.globalCompositeOperation='source-over';
-    if(img.complete&&img.naturalWidth){try{ctx.filter='blur(18px) saturate(.6)';ctx.drawImage(img,...cover());ctx.filter='none'}catch(e){}}
-    ctx.fillStyle='rgba(214,234,240,.62)';ctx.fillRect(0,0,W,H);
-    // condensation droplets
-    for(let i=0;i<Math.floor(W*H/2600);i++){const x=Math.random()*W,y=Math.random()*H,r=Math.random()*2.4+.4;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.5+.15)+')';ctx.fill()}
+    if(img.naturalWidth){try{ctx.filter='blur(20px) saturate(.7)';ctx.drawImage(img,...cover());ctx.filter='none'}catch(e){}}
+    ctx.fillStyle='rgba(222,238,243,.55)';ctx.fillRect(0,0,W,H);
+    for(let i=0;i<Math.floor(W*H/2400);i++){const x=Math.random()*W,y=Math.random()*H,r=Math.random()*2.2+.4;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.5+.15)+')';ctx.fill()}
   }
-  function wipe(x,y,px,py){
-    ctx.globalCompositeOperation='destination-out';
-    ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=Math.max(90,W*.07);
-    ctx.strokeStyle='rgba(0,0,0,1)';ctx.beginPath();ctx.moveTo(px??x,py??y);ctx.lineTo(x,y);ctx.stroke();
-    wiped++;if(wiped>14)hint.classList.add('gone');
-  }
-  function pos(e){const r=cv.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]}
+  function wipe(x,y,px,py){ctx.globalCompositeOperation='destination-out';ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=Math.max(90,W*.075);ctx.beginPath();ctx.moveTo(px??x,py??y);ctx.lineTo(x,y);ctx.stroke();if(++n>14)hint.classList.add('gone')}
+  const pos=e=>{const r=cv.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]};
   cv.addEventListener('pointermove',e=>{const[x,y]=pos(e);wipe(x,y,last?.[0],last?.[1]);last=[x,y]});
   cv.addEventListener('pointerleave',()=>last=null);
-  // auto squeegee pass on load
   function auto(){
-    const pts=[];const mob=W<700;const x0=mob?-40:W*.46,x1=W+40,y0=mob?.1:.06,y1=mob?.55:.98,rows=mob?5:8;
+    const mob=W<700,x0=mob?-40:W*.4,x1=W+40,y0=mob?.08:.04,y1=mob?.5:.62,rows=mob?5:6,pts=[];
     for(let r=0;r<rows;r++){const y=H*(y0+(y1-y0)*r/(rows-1));const a=r%2?[x1,x0]:[x0,x1];for(let t=0;t<=1;t+=.03)pts.push([a[0]+(a[1]-a[0])*t,y-Math.sin(t*Math.PI)*22])}
-    let i=1;(function step(){for(let k=0;k<2&&i<pts.length;k++,i++){wipe(pts[i][0],pts[i][1],pts[i-1][0],pts[i-1][1]);wiped--}if(i<pts.length)requestAnimationFrame(step)})();
+    let i=1;(function s(){for(let k=0;k<2&&i<pts.length;k++,i++){wipe(pts[i][0],pts[i][1],pts[i-1][0],pts[i-1][1]);n--}if(i<pts.length)requestAnimationFrame(s)})();
   }
-  img.onload=()=>{paint();setTimeout(auto,700)};
-  if(img.complete){paint();setTimeout(auto,700)}
-  let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(Math.abs(hero.clientWidth-W)>40)paint()},200)});
+  const go=()=>{paint();setTimeout(auto,600)};
+  if(img.complete&&img.naturalWidth)go();else img.onload=go;
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(Math.abs(box.clientWidth-W)>40)go()},200)});
+})();
+
+/* services switcher */
+(function(){
+  const data=[['Starting from','$150',['Residential','Commercial']],['Starting from','$150',['Residential','Commercial']],['Starting from','$175',['Residential','Commercial']],['Pricing','Free quote',['Commercial']],['Pricing','Free quote',['Commercial']]];
+  const items=document.querySelectorAll('.si'),imgs=document.querySelectorAll('#svcView img');
+  function set(i){items.forEach((x,j)=>x.classList.toggle('on',j==i));imgs.forEach((x,j)=>x.classList.toggle('on',j==i));
+    document.getElementById('svcLbl').textContent=data[i][0];document.getElementById('svcPr').textContent=data[i][1];
+    document.getElementById('svcWho').innerHTML=data[i][2].map(t=>'<span>'+t+'</span>').join('')}
+  items.forEach(it=>{it.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover)').matches)set(+it.dataset.i)});it.addEventListener('click',()=>set(+it.dataset.i))});
 })();
 
 /* before/after */
 (function(){const sl=document.getElementById('slider'),t=document.getElementById('baTop'),b=document.getElementById('baBar'),k=document.getElementById('baKnob');let d=false;
-function s(x){const r=sl.getBoundingClientRect();const p=Math.min(100,Math.max(0,(x-r.left)/r.width*100));t.style.clipPath=`inset(0 ${100-p}% 0 0)`;b.style.left=k.style.left=p+'%'}
+function s(x){const r=sl.getBoundingClientRect(),p=Math.min(100,Math.max(0,(x-r.left)/r.width*100));t.style.clipPath=`inset(0 ${100-p}% 0 0)`;b.style.left=k.style.left=p+'%'}
 sl.addEventListener('pointerdown',e=>{d=true;s(e.clientX)});addEventListener('pointermove',e=>{if(d)s(e.clientX)});addEventListener('pointerup',()=>d=false)})();
 
-/* gallery reel */
-(function(){const r=document.getElementById('reel');const by=()=>r.querySelector('figure').offsetWidth+18;
-document.getElementById('gn').onclick=()=>r.scrollBy({left:by(),behavior:'smooth'});
-document.getElementById('gp').onclick=()=>r.scrollBy({left:-by(),behavior:'smooth'});
-let down=false,sx,sl;r.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;down=true;sx=e.pageX;sl=r.scrollLeft;r.style.scrollSnapType='none'});
-addEventListener('pointerup',()=>{if(down){down=false;r.style.scrollSnapType=''}});
-r.addEventListener('pointermove',e=>{if(down)r.scrollLeft=sl-(e.pageX-sx)})})();
-
-/* process progress */
-(function(){const st=document.getElementById('steps'),f=document.getElementById('fill'),items=st.querySelectorAll('.st');
-function u(){const r=st.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh*.6-r.top)/(r.height-40)));f.style.height=(p*(r.height-40))+'px';
-items.forEach(it=>{const ir=it.getBoundingClientRect();it.classList.toggle('on',ir.top<vh*.6)})}
-addEventListener('scroll',u,{passive:true});u()})();
+/* reel */
+(function(){const r=document.getElementById('reel'),by=()=>r.querySelector('figure').offsetWidth+16;
+document.getElementById('gn').onclick=()=>r.scrollBy({left:by(),behavior:'smooth'});document.getElementById('gp').onclick=()=>r.scrollBy({left:-by(),behavior:'smooth'});
+let d=false,sx,sl;r.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;d=true;sx=e.pageX;sl=r.scrollLeft;r.style.scrollSnapType='none'});
+addEventListener('pointerup',()=>{if(d){d=false;r.style.scrollSnapType=''}});r.addEventListener('pointermove',e=>{if(d)r.scrollLeft=sl-(e.pageX-sx)})})();
 
 /* count up */
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.c,from=to>1000?1950:0;let t0=null;
-(function f(ts){t0??=ts;const p=Math.min(1,(ts-t0)/1400),v=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1)requestAnimationFrame(f)})(performance.now());co.unobserve(el)}),{threshold:.6});
+(function f(ts){t0??=ts;const p=Math.min(1,(ts-t0)/1400);el.textContent=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(performance.now());co.unobserve(el)}),{threshold:.6});
 document.querySelectorAll('[data-c]').forEach(el=>co.observe(el));
 
 /* reveal */
